@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>可信机器学习 · 可靠图数据挖掘实验室</title>
+<link rel="stylesheet" href="lab-style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">可靠图数据挖掘实验室<small>RGMLab</small></a>
+    <nav class="links">
+      <a href="research-graph.html">图数据挖掘</a>
+      <a href="research-trustworthy.html" class="active">可信机器学习</a>
+      <a href="research-llm.html">大模型×图</a>
+      <a href="research-apps.html">安全与时空应用</a>
+      <a href="index.html#recruit">加入我们</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="page-head-inner">
+    <div class="crumb"><a href="index.html">首页</a> / 研究方向 / 可信机器学习</div>
+    <div class="head-flex">
+      <div class="head-text">
+        <h1>可信机器学习</h1>
+        <div class="en">Trustworthy Machine Learning on Graphs</div>
+        <p class="lead">模型在论文里准确，不等于在现实中可用。本方向为图上的机器学习建立三条可信度标准——<b>说得清</b>（可解释）、<b>扛得住</b>（鲁棒）、<b>走得远</b>（泛化），让检测结果在安全、金融等高风险场景中真正可被信任。</p>
+        <div class="tags">
+          <span class="tag">可解释性</span>
+          <span class="tag">鲁棒性</span>
+          <span class="tag">泛化性</span>
+          <span class="tag">反事实证据校准</span>
+        </div>
+      </div>
+      <div class="head-visual">
+        <img src="images/trustworthy-ml.jpg" alt="可信机器学习：可解释、鲁棒、可泛化的图模型">
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- 生活场景引入 -->
+  <section class="block">
+    <h2 class="title">这个方向有什么用？</h2>
+    <p class="subtitle">模型给出答案很容易，难的是让人敢相信这个答案。</p>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>银行凭什么冻结我的账户？</h3>
+        <p>风控系统判定账户异常时，必须给用户和监管一个说得清的理由，不能只说"模型觉得可疑"。<b>对应研究：</b>可解释性——自动找出支持判决的证据。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>骗子学会“装正常”怎么办？</h3>
+        <p>诈骗者会故意伪装行为模式来骗过检测模型，数据里也充满噪声和缺失。<b>对应研究：</b>鲁棒性——让模型在干扰和攻击下依然稳定。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>从没见过的新型骗局怎么识别？</h3>
+        <p>诈骗手法不断翻新，模型不能只认识训练时见过的那几种。<b>对应研究：</b>泛化性——识别未知异常、只用极少样本完成检测。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 研究内容 -->
+  <section class="block">
+    <h2 class="title">我们在研究什么</h2>
+    <p class="subtitle">三个维度，共同回答一个问题：这个结果凭什么可信？</p>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3><span class="qno">01</span>可解释 · 说得清</h3>
+        <p>不只给出"异常"的判决，还给出判决的依据：定位证据子图，并通过边级反事实证据校准回答"改动哪条边，结论就会改变"，让解释精确到证据级别。</p>
+      </div>
+      <div class="card">
+        <h3><span class="qno">02</span>鲁棒 · 扛得住</h3>
+        <p>真实数据充满噪声、缺失与对抗扰动。研究扰动与攻击下的稳定性评估与防御方法，保证模型在数据质量下降时仍然可靠。</p>
+      </div>
+      <div class="card">
+        <h3><span class="qno">03</span>泛化 · 走得远</h3>
+        <p>面向训练时没见过的新节点、新边与新型异常：研究归纳式检测、开放场景未知异常识别与少样本检测，让模型走出训练集仍然有效。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 代表性成果 -->
+  <section class="block">
+    <h2 class="title">代表性成果</h2>
+    <p class="subtitle">本方向近年的部分论文与项目。</p>
+    <div class="paper">
+      <div class="pt">Invariant Graph Representations for Continuous-Time Dynamic Graphs Under Distribution Shifts</div>
+      <div class="pa">Lanting Fang, Yulian Yang, Yawei Zhang, Shanshan Feng, Kaiyu Feng, Hanning Yuan</div>
+      <div class="pv"><span class="venue">IJCAI 2026 · CCF B</span><span class="venue b">分布漂移下泛化</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">Unseen Anomaly Detection from System Logs</div>
+      <div class="pa">Yanni Tang, Zhuoxing Zhang, Lanting Fang, et al.</div>
+      <div class="pv"><span class="venue">SIGMOD 2026 · CCF A</span><span class="venue b">未知异常检测</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">Anonymous Edge Representation for Inductive Anomaly Detection in Dynamic Bipartite Graphs</div>
+      <div class="pa">Lanting Fang, Kaiyu Feng, Jie Gui, Shanshan Feng, Aiqun Hu</div>
+      <div class="pv"><span class="venue">VLDB 2023 · CCF A</span><span class="venue b">归纳式泛化检测</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">AnomalyLLM: Few-shot Anomaly Edge Detection for Dynamic Graphs using Large Language Models</div>
+      <div class="pa">Shuo Liu, Di Yao, Lanting Fang, et al.</div>
+      <div class="pv"><span class="venue">ICDM 2024 · CCF B</span><span class="venue b">少样本检测</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">动态图异常检测的稳定性与可解释性研究</div>
+      <div class="pa">国家自然科学基金（面上项目）· 2025–2028 · 负责人：方兰婷</div>
+      <div class="pv"><span class="venue b">在研项目</span></div>
+    </div>
+  </section>
+
+  <!-- 课题概览 -->
+  <section class="block">
+    <h2 class="title">在研课题 · Demo</h2>
+    <p class="subtitle">课题面向研究生与优秀本科生开放，Demo 与代码将陆续上线。</p>
+    <div class="grid cols-3">
+      <div class="slot">
+        <div class="slot-top">
+          <h3>团体异常检测（反事实证据校准）</h3>
+          <span class="badge dev">开发中</span>
+        </div>
+        <p class="desc">异常子图识别 + 边级反事实证据校准，让异常检测结果可解释。</p>
+        <div class="actions"><a href="#">Demo 占位</a></div>
+      </div>
+      <div class="slot">
+        <div class="slot-top">
+          <h3>鲁棒性评测与防御</h3>
+          <span class="badge hire">招募中</span>
+        </div>
+        <p class="desc">面向扰动、噪声与攻击的稳定性评估与防御方法，课题招募中。</p>
+        <div class="actions"><a href="index.html#recruit">如何加入 →</a></div>
+      </div>
+      <div class="slot">
+        <div class="slot-top">
+          <h3>开放场景少样本检测</h3>
+          <span class="badge hire">招募中</span>
+        </div>
+        <p class="desc">面向未知异常与少样本场景的泛化检测方法，课题招募中。</p>
+        <div class="actions"><a href="index.html#recruit">如何加入 →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 招生引导 -->
+  <div class="join-banner">
+    <div>
+      <div class="jb-title">对这个方向感兴趣？</div>
+      <div class="jb-sub">如果你喜欢追问"模型为什么这样判断"，并愿意把它变成严谨的算法与实验，欢迎发邮件聊聊。</div>
+    </div>
+    <a class="btn primary" href="index.html#recruit">加入我们</a>
+  </div>
+
+</main>
+
+<footer>
+  可靠图数据挖掘实验室 · 北京理工大学计算机学院 · 方兰婷 副教授<br>
+  联系邮箱：ltfang@bit.edu.cn
+</footer>
+
+</body>
+</html>

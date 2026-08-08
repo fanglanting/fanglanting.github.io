@@ -1,0 +1,179 @@
+/* ============================================================
+   实验室主页统一样式（方向页共用）
+   常用修改：
+   · 主题色：修改下方 :root 里的 --accent / --accent-dark / --gold
+   · 页面背景：--bg；卡片底色：--card；正文颜色：--ink
+============================================================ */
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --accent-soft: #eff6ff;
+  --gold: #d97706;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.7;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- 导航 ---------- */
+header.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: 1100px; margin: 0 auto; padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px; gap: 12px;
+}
+.brand { font-weight: 700; font-size: 16px; color: var(--ink); white-space: nowrap; }
+.brand small { font-weight: 400; color: var(--muted); margin-left: 6px; font-size: 12px; }
+nav.links { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+nav.links a { color: var(--ink); font-size: 14px; white-space: nowrap; }
+nav.links a:hover { color: var(--accent); text-decoration: none; }
+nav.links a.active { color: var(--accent); font-weight: 600; }
+
+/* ---------- 页头 ---------- */
+.page-head {
+  background: linear-gradient(135deg, var(--accent-soft) 0%, #f8fafc 60%, #fff7ed 100%);
+  border-bottom: 1px solid var(--line);
+}
+.page-head-inner { max-width: 1100px; margin: 0 auto; padding: 52px 20px 44px; }
+.page-head .crumb { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+.page-head h1 { font-size: 30px; font-weight: 800; }
+.page-head .en { color: var(--muted); margin-top: 6px; font-size: 15px; }
+.page-head .lead { margin-top: 18px; max-width: 640px; font-size: 16px; color: #374151; }
+.page-head .tags { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  background: #fff; border: 1px solid var(--line); border-radius: 999px;
+  padding: 5px 14px; font-size: 13px;
+}
+.head-flex { display: flex; gap: 40px; align-items: center; }
+.head-flex .head-text { flex: 1.2; min-width: 0; }
+.head-flex .head-visual { flex: 1; max-width: 400px; }
+.head-visual img {
+  width: 100%; height: auto; display: block;
+  border-radius: 16px; border: 1px solid var(--line);
+  box-shadow: 0 10px 30px rgba(37,99,235,.10);
+}
+.diff {
+  margin-top: 16px; background: #fff; border: 1px solid var(--line);
+  border-left: 3px solid var(--accent); border-radius: 8px;
+  padding: 10px 14px; font-size: 13.5px; color: #374151;
+}
+.diff b { color: var(--ink); }
+
+/* ---------- 主内容 ---------- */
+main { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; }
+section.block { padding: 48px 0 6px; }
+h2.title { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+p.subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+.grid { display: grid; gap: 18px; }
+.grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 20px;
+}
+.card h3 { font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.card h3 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; flex: 0 0 auto; }
+.card p { font-size: 14px; color: #374151; }
+.card ul { font-size: 14px; color: #374151; padding-left: 18px; }
+.card li { margin: 4px 0; }
+
+/* 编号研究问题卡片 */
+.card .qno {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px; border-radius: 8px;
+  background: var(--accent-soft); color: var(--accent-dark);
+  font-size: 13px; font-weight: 700; flex: 0 0 auto;
+}
+
+/* 招生引导条 */
+.join-banner {
+  margin-top: 48px;
+  background: linear-gradient(120deg, #eff6ff 0%, #ffffff 60%, #fff7ed 100%);
+  border: 1px solid var(--line); border-radius: 14px;
+  padding: 26px 28px;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+}
+.join-banner .jb-title { font-size: 18px; font-weight: 700; }
+.join-banner .jb-sub { font-size: 14px; color: var(--muted); margin-top: 4px; max-width: 560px; }
+.btn {
+  display: inline-block; padding: 10px 24px; border-radius: 8px;
+  font-size: 15px; transition: .15s;
+}
+.btn.primary { background: var(--accent); color: #fff; }
+.btn.primary:hover { background: var(--accent-dark); text-decoration: none; }
+.btn.ghost { border: 1px solid var(--line); background: #fff; color: var(--ink); }
+.btn.ghost:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+/* ---------- 课题卡片 ---------- */
+.slot {
+  border: 1.5px dashed #cbd5e1; border-radius: 12px; padding: 16px 18px;
+  background: #fbfdff; min-height: 150px;
+  display: flex; flex-direction: column;
+}
+.slot .slot-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.slot h3 { font-size: 15px; }
+.slot .who { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.slot .desc { font-size: 13px; color: var(--muted); margin-top: 6px; flex: 1; }
+.slot .actions { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+.slot .actions a {
+  font-size: 12px; border: 1px dashed var(--line); border-radius: 7px;
+  padding: 5px 12px; color: var(--muted);
+}
+.slot .actions a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.slot.recruit { border-style: solid; border-color: #bfdbfe; background: var(--accent-soft); }
+.slot.recruit .desc { color: #1e40af; }
+.badge { display: inline-block; font-size: 12px; border-radius: 999px; padding: 2px 10px; white-space: nowrap; }
+.badge.fill { background: #f1f5f9; color: var(--muted); }
+.badge.dev { background: #eef2ff; color: #4338ca; }
+.badge.done { background: #ecfdf5; color: #047857; }
+.badge.plan { background: #fef3c7; color: #92400e; }
+.badge.hire { background: #eff6ff; color: #1d4ed8; }
+
+/* ---------- 论文/项目 ---------- */
+.paper {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.paper .pt { font-size: 14px; font-weight: 600; }
+.paper .pa { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.venue {
+  display: inline-block; background: var(--accent-soft); color: var(--accent-dark);
+  border-radius: 5px; padding: 1px 8px; font-size: 12px; margin-top: 4px;
+}
+.venue.b { background: #fef3c7; color: #92400e; }
+table.list { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 10px; overflow: hidden; }
+table.list th, table.list td { text-align: left; padding: 11px 16px; font-size: 14px; border-bottom: 1px solid var(--line); }
+table.list th { background: #f3f4f6; font-weight: 600; }
+table.list tr:last-child td { border-bottom: none; }
+
+/* ---------- 页脚 ---------- */
+footer {
+  border-top: 1px solid var(--line); background: #fff;
+  padding: 26px 20px; text-align: center; color: var(--muted); font-size: 13px;
+}
+
+@media (max-width: 820px) {
+  .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; }
+  .page-head h1 { font-size: 24px; }
+  nav.links { gap: 10px; }
+  .head-flex { flex-direction: column; }
+  .head-flex .head-visual { max-width: 100%; }
+  .join-banner { padding: 20px; }
+}

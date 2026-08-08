@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安全与时空应用 · 可靠图数据挖掘实验室</title>
+<link rel="stylesheet" href="lab-style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">可靠图数据挖掘实验室<small>RGMLab</small></a>
+    <nav class="links">
+      <a href="research-graph.html">图数据挖掘</a>
+      <a href="research-trustworthy.html">可信机器学习</a>
+      <a href="research-llm.html">大模型×图</a>
+      <a href="research-apps.html" class="active">安全与时空应用</a>
+      <a href="index.html#recruit">加入我们</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="page-head-inner">
+    <div class="crumb"><a href="index.html">首页</a> / 研究方向 / 安全与时空应用</div>
+    <div class="head-flex">
+      <div class="head-text">
+        <h1>安全与时空应用</h1>
+        <div class="en">Security &amp; Spatio-temporal Applications</div>
+        <p class="lead">方法的价值要在真实场景中检验。本方向把图挖掘与可信学习方法落到网络安全、金融安全、应急管理与时空预测等真实问题上，<b>以真实数据锻炼方法，以应用需求反哺研究</b>。</p>
+        <div class="tags">
+          <span class="tag">日志 / APT 检测</span>
+          <span class="tag">设备指纹认证</span>
+          <span class="tag">金融网络安全</span>
+          <span class="tag">应急情报研判</span>
+          <span class="tag">野火预测</span>
+          <span class="tag">社交网络分析</span>
+        </div>
+      </div>
+      <div class="head-visual">
+        <img src="images/security-apps.jpg" alt="安全与时空应用：从网络安全到时空预测">
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- 生活场景引入 -->
+  <section class="block">
+    <h2 class="title">这个方向有什么用？</h2>
+    <p class="subtitle">你在新闻里看到的这些事，背后都有我们在研究的技术。</p>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>96110 反诈预警是怎么知道你可能被骗了？</h3>
+        <p>反诈中心通过分析资金流与通信网络中的异常模式，在受害者转账前发出预警。<b>对应研究：</b>资金网络异常检测、诈骗团伙识别。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>黑客潜入公司内网数月，怎么被发现？</h3>
+        <p>高级持续性威胁（APT）会在系统日志里留下极隐蔽的蛛丝马迹。<b>对应研究：</b>基于溯源图的 APT 检测（成果发表于 ESWA 2025）。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>山火能提前一周预测吗？</h3>
+        <p>结合气象、植被、地形等时空数据，可以提前评估区域野火风险，为应急调度争取时间。<b>对应研究：</b>RAG + 知识图谱驱动的野火时空预测。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>没有密码，设备怎么证明“我是我”？</h3>
+        <p>每台无线设备的射频信号都有独一无二的“指纹”，就像人的指纹一样。<b>对应研究：</b>设备指纹认证（成果发表于 ESWA 2024）。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 应用场景 -->
+  <section class="block">
+    <h2 class="title">我们在解决什么真实问题</h2>
+    <p class="subtitle">四类场景，每一个背后都有在研项目或已发表成果支撑。</p>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3><span class="dot"></span>网络安全</h3>
+        <ul>
+          <li><b>日志 / APT 检测：</b>基于动态溯源图识别高级持续性威胁（ESWA 2025）</li>
+          <li><b>设备指纹认证：</b>基于射频特征融合与对比学习的设备身份认证（ESWA 2024；GenID 已录用 IJCAI 2026）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="dot"></span>金融网络安全</h3>
+        <ul>
+          <li><b>诈骗团伙识别：</b>在资金与通信网络中发现团伙性异常结构</li>
+          <li><b>洗钱路径识别：</b>追踪跨账户、跨时间的可疑资金链路（与企业合作课题）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="dot"></span>应急管理</h3>
+        <ul>
+          <li><b>多灾种情报研判：</b>应急管理部重点科技计划课题，构建情报研判分析与印证模型</li>
+          <li><b>谣言与虚假信息检测：</b>基于传播结构的无监督谣言检测（TKDE 2023）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="dot"></span>时空数据</h3>
+        <ul>
+          <li><b>野火预测：</b>RAG + 知识图谱驱动的时空预测，由前 14 天预测后 7 天</li>
+          <li><b>信息传播预测：</b>双曲空间表示下的信息扩散预测（TKDE 2022）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 课题概览 -->
+  <section class="block">
+    <h2 class="title">在研课题 · Demo</h2>
+    <p class="subtitle">课题面向研究生与优秀本科生开放，Demo 与代码将陆续上线。</p>
+    <div class="grid cols-3">
+      <div class="slot">
+        <div class="slot-top">
+          <h3>应急情报研判（多灾种）</h3>
+          <span class="badge dev">项目执行</span>
+        </div>
+        <p class="desc">面向应急管理部重点科技计划课题，构建多灾种情报研判分析与印证模型。</p>
+        <div class="actions"><a href="#">Demo 占位</a></div>
+      </div>
+      <div class="slot">
+        <div class="slot-top">
+          <h3>设备指纹认证</h3>
+          <span class="badge dev">开发中</span>
+        </div>
+        <p class="desc">基于射频特征融合与对比学习实现设备身份认证，GenID 已录用于 IJCAI 2026。</p>
+        <div class="actions"><a href="#">Demo 占位</a></div>
+      </div>
+      <div class="slot">
+        <div class="slot-top">
+          <h3>野火预测</h3>
+          <span class="badge plan">方案设计</span>
+        </div>
+        <p class="desc">RAG + 知识图谱驱动的野火时空预测，由前 14 天数据预测后 7 天风险。</p>
+        <div class="actions"><a href="#">Demo 占位</a></div>
+      </div>
+      <div class="slot">
+        <div class="slot-top">
+          <h3>金融网络安全（诈骗团伙识别 · 洗钱识别）</h3>
+          <span class="badge hire">招募中</span>
+        </div>
+        <p class="desc">基于资金网络与社群结构识别诈骗团伙与洗钱路径，课题招募中。</p>
+        <div class="actions"><a href="index.html#recruit">如何加入 →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 招生引导 -->
+  <div class="join-banner">
+    <div>
+      <div class="jb-title">对这个方向感兴趣？</div>
+      <div class="jb-sub">如果你想让代码和模型解决真实世界的安全与应急问题，并接触真实数据与业务需求，欢迎发邮件聊聊。</div>
+    </div>
+    <a class="btn primary" href="index.html#recruit">加入我们</a>
+  </div>
+
+</main>
+
+<footer>
+  可靠图数据挖掘实验室 · 北京理工大学计算机学院 · 方兰婷 副教授<br>
+  联系邮箱：ltfang@bit.edu.cn
+</footer>
+
+</body>
+</html>

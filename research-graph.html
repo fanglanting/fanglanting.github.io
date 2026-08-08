@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>图数据挖掘 · 可靠图数据挖掘实验室</title>
+<link rel="stylesheet" href="lab-style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">可靠图数据挖掘实验室<small>RGMLab</small></a>
+    <nav class="links">
+      <a href="research-graph.html" class="active">图数据挖掘</a>
+      <a href="research-trustworthy.html">可信机器学习</a>
+      <a href="research-llm.html">大模型×图</a>
+      <a href="research-apps.html">安全与时空应用</a>
+      <a href="index.html#recruit">加入我们</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="page-head-inner">
+    <div class="crumb"><a href="index.html">首页</a> / 研究方向 / 图数据挖掘</div>
+    <div class="head-flex">
+      <div class="head-text">
+        <h1>图数据挖掘</h1>
+        <div class="en">Graph Data Mining</div>
+        <p class="lead">社交网络、资金往来、系统日志、交通与时空轨迹——现实世界的关系数据天然是图。本方向研究图结构数据的表示、挖掘与推理，核心目标是回答三个问题：<b>异常在哪里、为什么异常、如何稳定地发现它</b>。</p>
+        <div class="tags">
+          <span class="tag">动态图异常检测</span>
+          <span class="tag">图表示学习</span>
+          <span class="tag">链接与传播预测</span>
+          <span class="tag">时空数据</span>
+          <span class="tag">知识图谱</span>
+        </div>
+      </div>
+      <div class="head-visual">
+        <img src="images/graph-mining.jpg" alt="图数据挖掘：在动态图中定位异常子结构">
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- 生活场景引入 -->
+  <section class="block">
+    <h2 class="title">这个方向有什么用？</h2>
+    <p class="subtitle">先从三个你熟悉的场景说起——它们背后都是"图"上的问题。</p>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>诈骗团伙是怎么被发现的？</h3>
+        <p>骗子团伙的转账和通话，会在资金与通信网络里形成反常的“小圈子”。<b>对应研究：</b>动态图异常检测——在上亿条记录里自动找出这些反常结构。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>谣言是怎么传开的？</h3>
+        <p>一条谣言在社交平台上的转发路径会形成独特的传播树，和真实新闻很不一样。<b>对应研究：</b>传播预测与谣言检测——从传播结构识别谣言、预测扩散趋势。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--gold)"></span>App 怎么知道“你可能认识 TA”？</h3>
+        <p>社交平台的“可能认识的人”、电商的“猜你喜欢”，本质都是在图上预测未来会出现的链接。<b>对应研究：</b>链接预测与图表示学习。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 研究内容 -->
+  <section class="block">
+    <h2 class="title">我们在研究什么</h2>
+    <p class="subtitle">三条相互支撑的主线：从表示到检测，再到预测。</p>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3><span class="qno">01</span>动态图异常检测</h3>
+        <p>在持续演化的图中识别异常节点、边与子图结构。针对异常稀少、模式未知、随时间漂移的特点，研究无监督与归纳式检测方法，支撑诈骗识别、APT 检测等真实场景。</p>
+      </div>
+      <div class="card">
+        <h3><span class="qno">02</span>图表示学习</h3>
+        <p>学习保留结构、时序与语义信息的节点与边表示，包括匿名边表示、双曲空间嵌入等，为下游检测与预测任务提供高质量的图特征基础。</p>
+      </div>
+      <div class="card">
+        <h3><span class="qno">03</span>链接与传播预测</h3>
+        <p>预测图的未来演化：信息如何传播、链接何时形成、谣言如何扩散。研究成果应用于社交舆情分析与时空事件预测。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 代表性成果 -->
+  <section class="block">
+    <h2 class="title">代表性成果</h2>
+    <p class="subtitle">本方向近年的部分论文（完整列表见主页）。</p>
+    <div class="paper">
+      <div class="pt">Invariant Graph Representations for Continuous-Time Dynamic Graphs Under Distribution Shifts</div>
+      <div class="pa">Lanting Fang, Yulian Yang, Yawei Zhang, Shanshan Feng, Kaiyu Feng, Hanning Yuan</div>
+      <div class="pv"><span class="venue">IJCAI 2026 · CCF B</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">Unseen Anomaly Detection from System Logs</div>
+      <div class="pa">Yanni Tang, Zhuoxing Zhang, Lanting Fang, et al.</div>
+      <div class="pv"><span class="venue">SIGMOD 2026 · CCF A</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">Substructure-aware Log Anomaly Detection</div>
+      <div class="pa">Yanni Tang, Zhuoxing Zhang, Kaiqi Zhao, Lanting Fang, et al.</div>
+      <div class="pv"><span class="venue">VLDB 2024 · CCF A</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">Anonymous Edge Representation for Inductive Anomaly Detection in Dynamic Bipartite Graphs</div>
+      <div class="pa">Lanting Fang, Kaiyu Feng, Jie Gui, Shanshan Feng, Aiqun Hu</div>
+      <div class="pv"><span class="venue">VLDB 2023 · CCF A</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">Unsupervised Rumor Detection Based on Propagation Tree VAE</div>
+      <div class="pa">Lanting Fang, Kaiyu Feng, Kaiqi Zhao, Aiqun Hu, Tao Li</div>
+      <div class="pv"><span class="venue">TKDE 2023 · CCF A</span></div>
+    </div>
+    <div class="paper">
+      <div class="pt">H-Diffu: Hyperbolic Representations for Information Diffusion Prediction</div>
+      <div class="pa">Shanshan Feng, Kaiqi Zhao, Lanting Fang, et al.</div>
+      <div class="pv"><span class="venue">TKDE 2022 · CCF A</span></div>
+    </div>
+  </section>
+
+  <!-- 课题概览 -->
+  <section class="block">
+    <h2 class="title">在研课题 · Demo</h2>
+    <p class="subtitle">课题面向研究生与优秀本科生开放，Demo 与代码将陆续上线。</p>
+    <div class="grid cols-3">
+      <div class="slot">
+        <div class="slot-top">
+          <h3>团体异常检测（反事实证据校准）</h3>
+          <span class="badge dev">开发中</span>
+        </div>
+        <p class="desc">面向动态图识别异常子图，并以边级反事实证据校准解释"为什么异常"。</p>
+        <div class="actions"><a href="#">Demo 占位</a></div>
+      </div>
+      <div class="slot">
+        <div class="slot-top">
+          <h3>图数据挖掘评测与工具</h3>
+          <span class="badge plan">基础学习</span>
+        </div>
+        <p class="desc">构建图数据集、评测基线与工具链，为组内算法提供统一试验场。</p>
+        <div class="actions"><a href="#">Demo 占位</a></div>
+      </div>
+      <div class="slot recruit">
+        <div class="slot-top">
+          <h3>新课题开放中</h3>
+          <span class="badge hire">招募中</span>
+        </div>
+        <p class="desc">欢迎对动态图异常检测、图表示学习感兴趣的同学加入，课题方向可与导师共同细化。</p>
+        <div class="actions"><a href="index.html#recruit">如何加入 →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 招生引导 -->
+  <div class="join-banner">
+    <div>
+      <div class="jb-title">对这个方向感兴趣？</div>
+      <div class="jb-sub">无论你擅长算法推导还是工程实现，这里都有从基础到前沿的完整课题链。欢迎发邮件聊聊你的想法。</div>
+    </div>
+    <a class="btn primary" href="index.html#recruit">加入我们</a>
+  </div>
+
+</main>
+
+<footer>
+  可靠图数据挖掘实验室 · 北京理工大学计算机学院 · 方兰婷 副教授<br>
+  联系邮箱：ltfang@bit.edu.cn
+</footer>
+
+</body>
+</html>
