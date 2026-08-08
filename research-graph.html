@@ -28,17 +28,18 @@
       <div class="head-text">
         <h1>图数据挖掘</h1>
         <div class="en">Graph Data Mining</div>
-        <p class="lead">社交网络、资金往来、系统日志、交通与时空轨迹——现实世界的关系数据天然是图。本方向研究图结构数据的表示、挖掘与推理，核心目标是回答三个问题：<b>异常在哪里、为什么异常、如何稳定地发现它</b>。</p>
+        <p class="lead">社交网络、资金往来、系统日志、交通与时空轨迹——现实世界的关系数据天然是图。本方向研究图结构数据的<b>表示、挖掘与推理</b>：刻画节点、边与子图的结构与时序，识别异常与社区，预测传播与未来连接，并结合知识图谱与时空数据支撑安全、金融、应急等真实场景。</p>
         <div class="tags">
           <span class="tag">动态图异常检测</span>
           <span class="tag">图表示学习</span>
           <span class="tag">链接与传播预测</span>
+          <span class="tag">社区发现</span>
           <span class="tag">时空数据</span>
           <span class="tag">知识图谱</span>
         </div>
       </div>
       <div class="head-visual">
-        <img src="images/graph-mining.jpg" alt="图数据挖掘：在动态图中定位异常子结构">
+        <img src="images/graph-mining.jpg" alt="图数据挖掘：图表示、异常检测与传播预测">
       </div>
     </div>
   </div>
@@ -69,19 +70,23 @@
   <!-- 研究内容 -->
   <section class="block">
     <h2 class="title">我们在研究什么</h2>
-    <p class="subtitle">三条相互支撑的主线：从表示到检测，再到预测。</p>
-    <div class="grid cols-3">
+    <p class="subtitle">四条相互支撑的主线：从表示、检测，到预测与结构分析。</p>
+    <div class="grid cols-2">
       <div class="card">
-        <h3><span class="qno">01</span>动态图异常检测</h3>
-        <p>在持续演化的图中识别异常节点、边与子图结构。针对异常稀少、模式未知、随时间漂移的特点，研究无监督与归纳式检测方法，支撑诈骗识别、APT 检测等真实场景。</p>
+        <h3><span class="qno">01</span>图表示学习</h3>
+        <p>学习保留结构、时序与语义信息的节点、边与子图表示：包括匿名边表示、双曲空间嵌入、知识增强表示，以及面向分布漂移的连续时间动态图不变表示，为下游检测与预测任务提供高质量的图特征基础。</p>
       </div>
       <div class="card">
-        <h3><span class="qno">02</span>图表示学习</h3>
-        <p>学习保留结构、时序与语义信息的节点与边表示，包括匿名边表示、双曲空间嵌入等，为下游检测与预测任务提供高质量的图特征基础。</p>
+        <h3><span class="qno">02</span>动态图异常检测</h3>
+        <p>在持续演化的图中识别异常节点、边与子图结构。针对异常稀少、模式未知、随时间漂移的特点，研究无监督、归纳式与少样本检测方法，支撑日志异常、APT 检测、诈骗识别等真实场景。</p>
       </div>
       <div class="card">
         <h3><span class="qno">03</span>链接与传播预测</h3>
-        <p>预测图的未来演化：信息如何传播、链接何时形成、谣言如何扩散。研究成果应用于社交舆情分析与时空事件预测。</p>
+        <p>预测图的未来演化：信息如何扩散、链接何时形成、谣言如何传播。研究成果应用于社交舆情分析、虚假信息检测与时空事件预测。</p>
+      </div>
+      <div class="card">
+        <h3><span class="qno">04</span>社区发现与子图结构分析</h3>
+        <p>在异构图中高效发现紧密社区与可疑子图，回答“哪些节点构成一个团伙、为什么”，并结合反事实证据校准为异常检测结果提供可解释的支撑。</p>
       </div>
     </div>
   </section>
@@ -148,7 +153,7 @@
           <h3>新课题开放中</h3>
           <span class="badge hire">招募中</span>
         </div>
-        <p class="desc">欢迎对动态图异常检测、图表示学习感兴趣的同学加入，课题方向可与导师共同细化。</p>
+        <p class="desc">欢迎对图表示学习、动态图异常检测、传播预测与社区发现感兴趣的同学加入，课题方向可与导师共同细化。</p>
         <div class="actions"><a href="index.html#recruit">如何加入 →</a></div>
       </div>
     </div>
